@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.0 (2026-08-20)
 
 First release: a Kotlin Multiplatform SDK for the spoo.me v1 API, targeting
 Android and the JVM.
