@@ -1,0 +1,1736 @@
+public final class me/spoo/AccountStatsRequest {
+	public fun <init> ()V
+	public fun <init> (Lme/spoo/StatsQuery;Ljava/util/List;Ljava/util/List;)V
+	public synthetic fun <init> (Lme/spoo/StatsQuery;Ljava/util/List;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lme/spoo/StatsQuery;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Ljava/util/List;
+	public final fun copy (Lme/spoo/StatsQuery;Ljava/util/List;Ljava/util/List;)Lme/spoo/AccountStatsRequest;
+	public static synthetic fun copy$default (Lme/spoo/AccountStatsRequest;Lme/spoo/StatsQuery;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lme/spoo/AccountStatsRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getQuery ()Lme/spoo/StatsQuery;
+	public final fun getShortCodes ()Ljava/util/List;
+	public final fun getUrlIds ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/AliasCheck {
+	public static final field Companion Lme/spoo/AliasCheck$Companion;
+	public fun <init> (ZLme/spoo/AliasIssue;)V
+	public synthetic fun <init> (ZLme/spoo/AliasIssue;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component2 ()Lme/spoo/AliasIssue;
+	public final fun copy (ZLme/spoo/AliasIssue;)Lme/spoo/AliasCheck;
+	public static synthetic fun copy$default (Lme/spoo/AliasCheck;ZLme/spoo/AliasIssue;ILjava/lang/Object;)Lme/spoo/AliasCheck;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAvailable ()Z
+	public final fun getReason ()Lme/spoo/AliasIssue;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/AliasCheck$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/AliasCheck$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/AliasCheck;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/AliasCheck;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/AliasCheck$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/AliasIssue : java/lang/Enum {
+	public static final field EMOJI_POLICY Lme/spoo/AliasIssue;
+	public static final field FORMAT Lme/spoo/AliasIssue;
+	public static final field LENGTH Lme/spoo/AliasIssue;
+	public static final field RESERVED Lme/spoo/AliasIssue;
+	public static final field TAKEN Lme/spoo/AliasIssue;
+	public static final field UNKNOWN Lme/spoo/AliasIssue;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/AliasIssue;
+	public static fun values ()[Lme/spoo/AliasIssue;
+}
+
+public final class me/spoo/AliasKind : java/lang/Enum {
+	public static final field ALPHANUMERIC Lme/spoo/AliasKind;
+	public static final field Companion Lme/spoo/AliasKind$Companion;
+	public static final field EMOJI Lme/spoo/AliasKind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/AliasKind;
+	public static fun values ()[Lme/spoo/AliasKind;
+}
+
+public final class me/spoo/AliasKind$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Auth {
+	public final fun me (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class me/spoo/AuthProvider {
+	public static final field Companion Lme/spoo/AuthProvider$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lme/spoo/AuthProvider;
+	public static synthetic fun copy$default (Lme/spoo/AuthProvider;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/AuthProvider;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEmail ()Ljava/lang/String;
+	public final fun getProvider ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/AuthProvider$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/AuthProvider$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/AuthProvider;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/AuthProvider;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/AuthProvider$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/AuthenticationException : me/spoo/SpooApiException {
+	public final fun isPasswordRequired ()Z
+}
+
+public final class me/spoo/BulkErrorCode : java/lang/Enum {
+	public static final field CONFLICT Lme/spoo/BulkErrorCode;
+	public static final field FORBIDDEN Lme/spoo/BulkErrorCode;
+	public static final field INTERNAL Lme/spoo/BulkErrorCode;
+	public static final field NOT_ATTEMPTED Lme/spoo/BulkErrorCode;
+	public static final field NOT_FOUND Lme/spoo/BulkErrorCode;
+	public static final field UNKNOWN Lme/spoo/BulkErrorCode;
+	public static final field VALIDATION_ERROR Lme/spoo/BulkErrorCode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/BulkErrorCode;
+	public static fun values ()[Lme/spoo/BulkErrorCode;
+}
+
+public final class me/spoo/BulkOutcome {
+	public static final field Companion Lme/spoo/BulkOutcome$Companion;
+	public fun <init> (Lme/spoo/BulkSummary;Ljava/util/List;)V
+	public final fun component1 ()Lme/spoo/BulkSummary;
+	public final fun component2 ()Ljava/util/List;
+	public final fun copy (Lme/spoo/BulkSummary;Ljava/util/List;)Lme/spoo/BulkOutcome;
+	public static synthetic fun copy$default (Lme/spoo/BulkOutcome;Lme/spoo/BulkSummary;Ljava/util/List;ILjava/lang/Object;)Lme/spoo/BulkOutcome;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getResults ()Ljava/util/List;
+	public final fun getSummary ()Lme/spoo/BulkSummary;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/BulkOutcome$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/BulkOutcome$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/BulkOutcome;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/BulkOutcome;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/BulkOutcome$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/BulkResult {
+	public static final field Companion Lme/spoo/BulkResult$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;ZLme/spoo/BulkErrorCode;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ZLme/spoo/BulkErrorCode;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Z
+	public final fun component4 ()Lme/spoo/BulkErrorCode;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ZLme/spoo/BulkErrorCode;Ljava/lang/String;)Lme/spoo/BulkResult;
+	public static synthetic fun copy$default (Lme/spoo/BulkResult;Ljava/lang/String;Ljava/lang/String;ZLme/spoo/BulkErrorCode;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/BulkResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getError ()Ljava/lang/String;
+	public final fun getErrorCode ()Lme/spoo/BulkErrorCode;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getOk ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/BulkResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/BulkResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/BulkResult;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/BulkResult;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/BulkResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/BulkSummary {
+	public static final field Companion Lme/spoo/BulkSummary$Companion;
+	public fun <init> (JJJ)V
+	public final fun component1 ()J
+	public final fun component2 ()J
+	public final fun component3 ()J
+	public final fun copy (JJJ)Lme/spoo/BulkSummary;
+	public static synthetic fun copy$default (Lme/spoo/BulkSummary;JJJILjava/lang/Object;)Lme/spoo/BulkSummary;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFailed ()J
+	public final fun getSucceeded ()J
+	public final fun getTotal ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/BulkSummary$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/BulkSummary$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/BulkSummary;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/BulkSummary;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/BulkSummary$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimOutcome {
+	public static final field Companion Lme/spoo/ClaimOutcome$Companion;
+	public fun <init> (Ljava/util/List;J)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()J
+	public final fun copy (Ljava/util/List;J)Lme/spoo/ClaimOutcome;
+	public static synthetic fun copy$default (Lme/spoo/ClaimOutcome;Ljava/util/List;JILjava/lang/Object;)Lme/spoo/ClaimOutcome;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getClaimed ()J
+	public final fun getResults ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/ClaimOutcome$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/ClaimOutcome$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/ClaimOutcome;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/ClaimOutcome;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimOutcome$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimRequest {
+	public static final field Companion Lme/spoo/ClaimRequest$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lme/spoo/ClaimRequest;
+	public static synthetic fun copy$default (Lme/spoo/ClaimRequest;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/ClaimRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getToken ()Ljava/lang/String;
+	public final fun getUrlId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/ClaimRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/ClaimRequest$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/ClaimRequest;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/ClaimRequest;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimRequest$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimResult {
+	public static final field Companion Lme/spoo/ClaimResult$Companion;
+	public fun <init> (Ljava/lang/String;Lme/spoo/ClaimStatus;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lme/spoo/ClaimStatus;
+	public final fun copy (Ljava/lang/String;Lme/spoo/ClaimStatus;)Lme/spoo/ClaimResult;
+	public static synthetic fun copy$default (Lme/spoo/ClaimResult;Ljava/lang/String;Lme/spoo/ClaimStatus;ILjava/lang/Object;)Lme/spoo/ClaimResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getStatus ()Lme/spoo/ClaimStatus;
+	public final fun getUrlId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/ClaimResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/ClaimResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/ClaimResult;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/ClaimResult;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ClaimStatus : java/lang/Enum {
+	public static final field ALREADY_YOURS Lme/spoo/ClaimStatus;
+	public static final field CLAIMED Lme/spoo/ClaimStatus;
+	public static final field INVALID Lme/spoo/ClaimStatus;
+	public static final field UNKNOWN Lme/spoo/ClaimStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/ClaimStatus;
+	public static fun values ()[Lme/spoo/ClaimStatus;
+}
+
+public final class me/spoo/ComputedMetrics {
+	public static final field Companion Lme/spoo/ComputedMetrics$Companion;
+	public fun <init> (DDD)V
+	public final fun component1 ()D
+	public final fun component2 ()D
+	public final fun component3 ()D
+	public final fun copy (DDD)Lme/spoo/ComputedMetrics;
+	public static synthetic fun copy$default (Lme/spoo/ComputedMetrics;DDDILjava/lang/Object;)Lme/spoo/ComputedMetrics;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAverageClicksPerVisitor ()D
+	public final fun getRepeatClickRate ()D
+	public final fun getUniqueClickRate ()D
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/ComputedMetrics$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/ComputedMetrics$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/ComputedMetrics;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/ComputedMetrics;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ComputedMetrics$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ContentBlockedException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/CreateLinkBuilder {
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getAliasType ()Lme/spoo/AliasKind;
+	public final fun getBlockBots ()Ljava/lang/Boolean;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getExpireAfter ()Lkotlin/time/Instant;
+	public final fun getGeoRules ()Ljava/util/Map;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMaxClicks ()Ljava/lang/Long;
+	public final fun getMetaTags ()Lme/spoo/MetaTags;
+	public final fun getPassword ()Ljava/lang/String;
+	public final fun getPrivateStats ()Ljava/lang/Boolean;
+	public final fun setAlias (Ljava/lang/String;)V
+	public final fun setAliasType (Lme/spoo/AliasKind;)V
+	public final fun setBlockBots (Ljava/lang/Boolean;)V
+	public final fun setDomain (Ljava/lang/String;)V
+	public final fun setExpireAfter (Lkotlin/time/Instant;)V
+	public final fun setGeoRules (Ljava/util/Map;)V
+	public final fun setLongUrl (Ljava/lang/String;)V
+	public final fun setMaxClicks (Ljava/lang/Long;)V
+	public final fun setMetaTags (Lme/spoo/MetaTags;)V
+	public final fun setPassword (Ljava/lang/String;)V
+	public final fun setPrivateStats (Ljava/lang/Boolean;)V
+}
+
+public final class me/spoo/CreateLinkRequest {
+	public static final field Companion Lme/spoo/CreateLinkRequest$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lme/spoo/AliasKind;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTags;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Lme/spoo/AliasKind;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTags;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Ljava/util/Map;
+	public final fun component11 ()Lme/spoo/MetaTags;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Lme/spoo/AliasKind;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/Boolean;
+	public final fun component6 ()Ljava/lang/Long;
+	public final fun component7 ()Lkotlin/time/Instant;
+	public final fun component8 ()Ljava/lang/Boolean;
+	public final fun component9 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Lme/spoo/AliasKind;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTags;)Lme/spoo/CreateLinkRequest;
+	public static synthetic fun copy$default (Lme/spoo/CreateLinkRequest;Ljava/lang/String;Ljava/lang/String;Lme/spoo/AliasKind;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTags;ILjava/lang/Object;)Lme/spoo/CreateLinkRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getAliasType ()Lme/spoo/AliasKind;
+	public final fun getBlockBots ()Ljava/lang/Boolean;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getExpireAfter ()Lkotlin/time/Instant;
+	public final fun getGeoRules ()Ljava/util/Map;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMaxClicks ()Ljava/lang/Long;
+	public final fun getMetaTags ()Lme/spoo/MetaTags;
+	public final fun getPassword ()Ljava/lang/String;
+	public final fun getPrivateStats ()Ljava/lang/Boolean;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/CreateLinkRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/CreateLinkRequest$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/CreateLinkRequest;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/CreateLinkRequest;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/CreateLinkRequest$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/DeletedLink {
+	public static final field Companion Lme/spoo/DeletedLink$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lme/spoo/DeletedLink;
+	public static synthetic fun copy$default (Lme/spoo/DeletedLink;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/DeletedLink;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/DeletedLink$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/DeletedLink$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/DeletedLink;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/DeletedLink;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/DeletedLink$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Dimension : java/lang/Enum {
+	public static final field BROWSER Lme/spoo/Dimension;
+	public static final field CITY Lme/spoo/Dimension;
+	public static final field COUNTRY Lme/spoo/Dimension;
+	public static final field DEVICE Lme/spoo/Dimension;
+	public static final field OS Lme/spoo/Dimension;
+	public static final field REFERRER Lme/spoo/Dimension;
+	public static final field SHORT_CODE Lme/spoo/Dimension;
+	public static final field TIME Lme/spoo/Dimension;
+	public static final field UTM_CAMPAIGN Lme/spoo/Dimension;
+	public static final field UTM_MEDIUM Lme/spoo/Dimension;
+	public static final field UTM_SOURCE Lme/spoo/Dimension;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/Dimension;
+	public static fun values ()[Lme/spoo/Dimension;
+}
+
+public final class me/spoo/DomainPurge {
+	public static final field Companion Lme/spoo/DomainPurge$Companion;
+	public fun <init> (Ljava/lang/String;JLjava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()J
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;JLjava/lang/String;)Lme/spoo/DomainPurge;
+	public static synthetic fun copy$default (Lme/spoo/DomainPurge;Ljava/lang/String;JLjava/lang/String;ILjava/lang/Object;)Lme/spoo/DomainPurge;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCount ()J
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/DomainPurge$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/DomainPurge$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/DomainPurge;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/DomainPurge;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/DomainPurge$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Emoji {
+	public final fun set (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class me/spoo/EmojiEntry {
+	public static final field Companion Lme/spoo/EmojiEntry$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Z
+	public final fun component5 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;)Lme/spoo/EmojiEntry;
+	public static synthetic fun copy$default (Lme/spoo/EmojiEntry;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;ILjava/lang/Object;)Lme/spoo/EmojiEntry;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCharacter ()Ljava/lang/String;
+	public final fun getGenerates ()Z
+	public final fun getGroup ()Ljava/lang/String;
+	public final fun getKeywords ()Ljava/util/List;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/EmojiEntry$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/EmojiEntry$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/EmojiEntry;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/EmojiEntry;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/EmojiEntry$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/EmojiSet {
+	public static final field Companion Lme/spoo/EmojiSet$Companion;
+	public fun <init> (DDILjava/util/List;)V
+	public final fun component1 ()D
+	public final fun component2 ()D
+	public final fun component3 ()I
+	public final fun component4 ()Ljava/util/List;
+	public final fun copy (DDILjava/util/List;)Lme/spoo/EmojiSet;
+	public static synthetic fun copy$default (Lme/spoo/EmojiSet;DDILjava/util/List;ILjava/lang/Object;)Lme/spoo/EmojiSet;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAcceptMaxVersion ()D
+	public final fun getEmoji ()Ljava/util/List;
+	public final fun getGenerateMaxVersion ()D
+	public final fun getMaxGraphemes ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/EmojiSet$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/EmojiSet$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/EmojiSet;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/EmojiSet;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/EmojiSet$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ExportFormat : java/lang/Enum {
+	public static final field CSV Lme/spoo/ExportFormat;
+	public static final field JSON Lme/spoo/ExportFormat;
+	public static final field XLSX Lme/spoo/ExportFormat;
+	public static final field XML Lme/spoo/ExportFormat;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/ExportFormat;
+	public static fun values ()[Lme/spoo/ExportFormat;
+}
+
+public final class me/spoo/FilterDimension : java/lang/Enum {
+	public static final field BROWSER Lme/spoo/FilterDimension;
+	public static final field CITY Lme/spoo/FilterDimension;
+	public static final field COUNTRY Lme/spoo/FilterDimension;
+	public static final field DEVICE Lme/spoo/FilterDimension;
+	public static final field OS Lme/spoo/FilterDimension;
+	public static final field REFERRER Lme/spoo/FilterDimension;
+	public static final field UTM_CAMPAIGN Lme/spoo/FilterDimension;
+	public static final field UTM_MEDIUM Lme/spoo/FilterDimension;
+	public static final field UTM_SOURCE Lme/spoo/FilterDimension;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/FilterDimension;
+	public static fun values ()[Lme/spoo/FilterDimension;
+}
+
+public final class me/spoo/Generation : java/lang/Enum {
+	public static final field UNKNOWN Lme/spoo/Generation;
+	public static final field V1 Lme/spoo/Generation;
+	public static final field V2 Lme/spoo/Generation;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/Generation;
+	public static fun values ()[Lme/spoo/Generation;
+}
+
+public final class me/spoo/Link {
+	public static final field Companion Lme/spoo/Link$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/LinkStatus;Ljava/lang/Boolean;Ljava/util/Map;Lme/spoo/MetaTagsInfo;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/LinkStatus;Ljava/lang/Boolean;Ljava/util/Map;Lme/spoo/MetaTagsInfo;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Lme/spoo/MetaTagsInfo;
+	public final fun component11 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Lkotlin/time/Instant;
+	public final fun component7 ()Lme/spoo/LinkStatus;
+	public final fun component8 ()Ljava/lang/Boolean;
+	public final fun component9 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/LinkStatus;Ljava/lang/Boolean;Ljava/util/Map;Lme/spoo/MetaTagsInfo;Ljava/lang/String;)Lme/spoo/Link;
+	public static synthetic fun copy$default (Lme/spoo/Link;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/LinkStatus;Ljava/lang/Boolean;Ljava/util/Map;Lme/spoo/MetaTagsInfo;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/Link;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getClaimToken ()Ljava/lang/String;
+	public final fun getCreatedAt ()Lkotlin/time/Instant;
+	public final fun getGeoRules ()Ljava/util/Map;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMetaTags ()Lme/spoo/MetaTagsInfo;
+	public final fun getOwnerId ()Ljava/lang/String;
+	public final fun getPrivateStats ()Ljava/lang/Boolean;
+	public final fun getShortUrl ()Ljava/lang/String;
+	public final fun getStatus ()Lme/spoo/LinkStatus;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/Link$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/Link$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/Link;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/Link;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Link$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkItem {
+	public static final field Companion Lme/spoo/LinkItem$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTagsInfo;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTagsInfo;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Z
+	public final fun component11 ()Ljava/lang/Long;
+	public final fun component12 ()Lkotlin/time/Instant;
+	public final fun component13 ()Ljava/lang/String;
+	public final fun component14 ()Ljava/util/Map;
+	public final fun component15 ()Lme/spoo/MetaTagsInfo;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lme/spoo/LinkStatus;
+	public final fun component5 ()Lkotlin/time/Instant;
+	public final fun component6 ()Lkotlin/time/Instant;
+	public final fun component7 ()Ljava/lang/Long;
+	public final fun component8 ()Ljava/lang/Boolean;
+	public final fun component9 ()Ljava/lang/Boolean;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTagsInfo;)Lme/spoo/LinkItem;
+	public static synthetic fun copy$default (Lme/spoo/LinkItem;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/String;Ljava/util/Map;Lme/spoo/MetaTagsInfo;ILjava/lang/Object;)Lme/spoo/LinkItem;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getBlockBots ()Ljava/lang/Boolean;
+	public final fun getCreatedAt ()Lkotlin/time/Instant;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getExpireAfter ()Lkotlin/time/Instant;
+	public final fun getGeoRules ()Ljava/util/Map;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLastClick ()Lkotlin/time/Instant;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMaxClicks ()Ljava/lang/Long;
+	public final fun getMetaTags ()Lme/spoo/MetaTagsInfo;
+	public final fun getPasswordSet ()Z
+	public final fun getPrivateStats ()Ljava/lang/Boolean;
+	public final fun getStatus ()Lme/spoo/LinkStatus;
+	public final fun getTotalClicks ()Ljava/lang/Long;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/LinkItem$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/LinkItem$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/LinkItem;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/LinkItem;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkItem$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkPage {
+	public static final field Companion Lme/spoo/LinkPage$Companion;
+	public fun <init> (Ljava/util/List;IIJZ)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()J
+	public final fun component5 ()Z
+	public final fun copy (Ljava/util/List;IIJZ)Lme/spoo/LinkPage;
+	public static synthetic fun copy$default (Lme/spoo/LinkPage;Ljava/util/List;IIJZILjava/lang/Object;)Lme/spoo/LinkPage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHasNext ()Z
+	public final fun getItems ()Ljava/util/List;
+	public final fun getPage ()I
+	public final fun getPageSize ()I
+	public final fun getTotal ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/LinkPage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/LinkPage$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/LinkPage;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/LinkPage;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkPage$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkStatsReport {
+	public static final field Companion Lme/spoo/LinkStatsReport$Companion;
+	public fun <init> (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lme/spoo/StatsScope;
+	public final fun component10 ()Lme/spoo/TimeBucketInfo;
+	public final fun component11 ()Lme/spoo/ComputedMetrics;
+	public final fun component12 ()Ljava/lang/String;
+	public final fun component13 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/Map;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Lme/spoo/TimeRange;
+	public final fun component6 ()Lme/spoo/StatsSummary;
+	public final fun component7 ()Ljava/util/Map;
+	public final fun component8 ()Lkotlin/time/Instant;
+	public final fun component9 ()Ljava/lang/String;
+	public final fun copy (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;Ljava/lang/String;Ljava/lang/String;)Lme/spoo/LinkStatsReport;
+	public static synthetic fun copy$default (Lme/spoo/LinkStatsReport;Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/LinkStatsReport;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getComputedMetrics ()Lme/spoo/ComputedMetrics;
+	public final fun getFilters ()Ljava/util/Map;
+	public final fun getGeneratedAt ()Lkotlin/time/Instant;
+	public final fun getGroupBy ()Ljava/util/List;
+	public final fun getMetrics ()Ljava/util/Map;
+	public final fun getScope ()Lme/spoo/StatsScope;
+	public final fun getShortCode ()Ljava/lang/String;
+	public final fun getSummary ()Lme/spoo/StatsSummary;
+	public final fun getTimeBucketInfo ()Lme/spoo/TimeBucketInfo;
+	public final fun getTimeRange ()Lme/spoo/TimeRange;
+	public final fun getTimezone ()Ljava/lang/String;
+	public final fun getUrlId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/LinkStatsReport$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/LinkStatsReport$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/LinkStatsReport;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/LinkStatsReport;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkStatsReport$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/LinkStatus : java/lang/Enum {
+	public static final field ACTIVE Lme/spoo/LinkStatus;
+	public static final field BLOCKED Lme/spoo/LinkStatus;
+	public static final field EXPIRED Lme/spoo/LinkStatus;
+	public static final field INACTIVE Lme/spoo/LinkStatus;
+	public static final field UNKNOWN Lme/spoo/LinkStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/LinkStatus;
+	public static fun values ()[Lme/spoo/LinkStatus;
+}
+
+public final class me/spoo/Links {
+	public final fun bulkDelete (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun bulkMoveDomain (Ljava/util/List;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun bulkSetExpiry (Ljava/util/List;Lkotlin/time/Instant;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun bulkSetStatus (Ljava/util/List;Lme/spoo/SettableStatus;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun checkAlias (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun checkAlias$default (Lme/spoo/Links;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun claim (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun create (Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun create (Lme/spoo/CreateLinkRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun delete (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun deleteAllOnDomain (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun get (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getByAddress (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun list (Lme/spoo/ListLinksRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun list$default (Lme/spoo/Links;Lme/spoo/ListLinksRequest;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun listPaginated (Lme/spoo/ListLinksRequest;)Lkotlinx/coroutines/flow/Flow;
+	public static synthetic fun listPaginated$default (Lme/spoo/Links;Lme/spoo/ListLinksRequest;ILjava/lang/Object;)Lkotlinx/coroutines/flow/Flow;
+	public final fun setStatus (Ljava/lang/String;Lme/spoo/SettableStatus;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun update (Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class me/spoo/LinksKt {
+	public static final fun items (Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
+}
+
+public final class me/spoo/ListLinksRequest {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/Integer;Ljava/lang/Integer;Lme/spoo/SortBy;Lme/spoo/SortOrder;Ljava/lang/String;Lme/spoo/SettableStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/Integer;Ljava/lang/Integer;Lme/spoo/SortBy;Lme/spoo/SortOrder;Ljava/lang/String;Lme/spoo/SettableStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/Integer;
+	public final fun component10 ()Ljava/lang/Boolean;
+	public final fun component11 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/Integer;
+	public final fun component3 ()Lme/spoo/SortBy;
+	public final fun component4 ()Lme/spoo/SortOrder;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Lme/spoo/SettableStatus;
+	public final fun component7 ()Lkotlin/time/Instant;
+	public final fun component8 ()Lkotlin/time/Instant;
+	public final fun component9 ()Ljava/lang/Boolean;
+	public final fun copy (Ljava/lang/Integer;Ljava/lang/Integer;Lme/spoo/SortBy;Lme/spoo/SortOrder;Ljava/lang/String;Lme/spoo/SettableStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;)Lme/spoo/ListLinksRequest;
+	public static synthetic fun copy$default (Lme/spoo/ListLinksRequest;Ljava/lang/Integer;Ljava/lang/Integer;Lme/spoo/SortBy;Lme/spoo/SortOrder;Ljava/lang/String;Lme/spoo/SettableStatus;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/ListLinksRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCreatedAfter ()Lkotlin/time/Instant;
+	public final fun getCreatedBefore ()Lkotlin/time/Instant;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getMaxClicksSet ()Ljava/lang/Boolean;
+	public final fun getPage ()Ljava/lang/Integer;
+	public final fun getPageSize ()Ljava/lang/Integer;
+	public final fun getPasswordSet ()Ljava/lang/Boolean;
+	public final fun getSearch ()Ljava/lang/String;
+	public final fun getSortBy ()Lme/spoo/SortBy;
+	public final fun getSortOrder ()Lme/spoo/SortOrder;
+	public final fun getStatus ()Lme/spoo/SettableStatus;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/MetaTags {
+	public static final field Companion Lme/spoo/MetaTags$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lme/spoo/MetaTags;
+	public static synthetic fun copy$default (Lme/spoo/MetaTags;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/MetaTags;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getColor ()Ljava/lang/String;
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getImage ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/MetaTags$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/MetaTags$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/MetaTags;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/MetaTags;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/MetaTags$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/MetaTagsInfo {
+	public static final field Companion Lme/spoo/MetaTagsInfo$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lme/spoo/MetaTagsInfo;
+	public static synthetic fun copy$default (Lme/spoo/MetaTagsInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lme/spoo/MetaTagsInfo;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getColor ()Ljava/lang/String;
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getImage ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getWarnings ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/MetaTagsInfo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/MetaTagsInfo$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/MetaTagsInfo;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/MetaTagsInfo;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/MetaTagsInfo$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Metric : java/lang/Enum {
+	public static final field CLICKS Lme/spoo/Metric;
+	public static final field UNIQUE_CLICKS Lme/spoo/Metric;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/Metric;
+	public static fun values ()[Lme/spoo/Metric;
+}
+
+public final class me/spoo/NotFoundException : me/spoo/SpooApiException {
+}
+
+public abstract interface class me/spoo/Patch {
+}
+
+public final class me/spoo/Patch$Keep : me/spoo/Patch {
+	public static final field INSTANCE Lme/spoo/Patch$Keep;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/Patch$Null : me/spoo/Patch {
+	public static final field INSTANCE Lme/spoo/Patch$Null;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/Patch$Set : me/spoo/Patch {
+	public fun <init> (Ljava/lang/Object;)V
+	public final fun component1 ()Ljava/lang/Object;
+	public final fun copy (Ljava/lang/Object;)Lme/spoo/Patch$Set;
+	public static synthetic fun copy$default (Lme/spoo/Patch$Set;Ljava/lang/Object;ILjava/lang/Object;)Lme/spoo/Patch$Set;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getValue ()Ljava/lang/Object;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/PayloadTooLargeException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/PermissionException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/Preview {
+	public static final field Companion Lme/spoo/Preview$Companion;
+	public fun <init> (Lme/spoo/Generation;Ljava/lang/String;Ljava/lang/String;Lme/spoo/PublicStatus;Ljava/lang/String;ZLme/spoo/PreviewDestination;Ljava/util/List;)V
+	public synthetic fun <init> (Lme/spoo/Generation;Ljava/lang/String;Ljava/lang/String;Lme/spoo/PublicStatus;Ljava/lang/String;ZLme/spoo/PreviewDestination;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lme/spoo/Generation;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lme/spoo/PublicStatus;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Z
+	public final fun component7 ()Lme/spoo/PreviewDestination;
+	public final fun component8 ()Ljava/util/List;
+	public final fun copy (Lme/spoo/Generation;Ljava/lang/String;Ljava/lang/String;Lme/spoo/PublicStatus;Ljava/lang/String;ZLme/spoo/PreviewDestination;Ljava/util/List;)Lme/spoo/Preview;
+	public static synthetic fun copy$default (Lme/spoo/Preview;Lme/spoo/Generation;Ljava/lang/String;Ljava/lang/String;Lme/spoo/PublicStatus;Ljava/lang/String;ZLme/spoo/PreviewDestination;Ljava/util/List;ILjava/lang/Object;)Lme/spoo/Preview;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getCreatedAt ()Ljava/lang/String;
+	public final fun getDestination ()Lme/spoo/PreviewDestination;
+	public final fun getGeneration ()Lme/spoo/Generation;
+	public final fun getGeoDestinations ()Ljava/util/List;
+	public final fun getPasswordProtected ()Z
+	public final fun getShortUrl ()Ljava/lang/String;
+	public final fun getStatus ()Lme/spoo/PublicStatus;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/Preview$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/Preview$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/Preview;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/Preview;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/Preview$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PreviewDestination {
+	public static final field Companion Lme/spoo/PreviewDestination$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Z
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lme/spoo/PreviewDestination;
+	public static synthetic fun copy$default (Lme/spoo/PreviewDestination;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Lme/spoo/PreviewDestination;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getPath ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isHttps ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/PreviewDestination$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/PreviewDestination$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/PreviewDestination;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/PreviewDestination;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PreviewDestination$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PreviewGeoDestination {
+	public static final field Companion Lme/spoo/PreviewGeoDestination$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Z
+	public final fun component5 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;)Lme/spoo/PreviewGeoDestination;
+	public static synthetic fun copy$default (Lme/spoo/PreviewGeoDestination;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;ILjava/lang/Object;)Lme/spoo/PreviewGeoDestination;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCountries ()Ljava/util/List;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getPath ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isHttps ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/PreviewGeoDestination$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/PreviewGeoDestination$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/PreviewGeoDestination;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/PreviewGeoDestination;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PreviewGeoDestination$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ProfilePicture {
+	public static final field Companion Lme/spoo/ProfilePicture$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lme/spoo/ProfilePicture;
+	public static synthetic fun copy$default (Lme/spoo/ProfilePicture;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/ProfilePicture;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getSource ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/ProfilePicture$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/ProfilePicture$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/ProfilePicture;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/ProfilePicture;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ProfilePicture$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PublicLinkFacts {
+	public static final field Companion Lme/spoo/PublicLinkFacts$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/PublicStatus;Ljava/lang/Long;ZZ)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/PublicStatus;Ljava/lang/Long;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lkotlin/time/Instant;
+	public final fun component5 ()Lme/spoo/PublicStatus;
+	public final fun component6 ()Ljava/lang/Long;
+	public final fun component7 ()Z
+	public final fun component8 ()Z
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/PublicStatus;Ljava/lang/Long;ZZ)Lme/spoo/PublicLinkFacts;
+	public static synthetic fun copy$default (Lme/spoo/PublicLinkFacts;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/time/Instant;Lme/spoo/PublicStatus;Ljava/lang/Long;ZZILjava/lang/Object;)Lme/spoo/PublicLinkFacts;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getBlockBots ()Z
+	public final fun getCreatedAt ()Lkotlin/time/Instant;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMaxClicks ()Ljava/lang/Long;
+	public final fun getPasswordProtected ()Z
+	public final fun getShortUrl ()Ljava/lang/String;
+	public final fun getStatus ()Lme/spoo/PublicStatus;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/PublicLinkFacts$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/PublicLinkFacts$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/PublicLinkFacts;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/PublicLinkFacts;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PublicLinkFacts$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PublicLinks {
+	public final fun preview (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun stats (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun stats$default (Lme/spoo/PublicLinks;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+}
+
+public final class me/spoo/PublicStats {
+	public static final field Companion Lme/spoo/PublicStats$Companion;
+	public fun <init> (Lme/spoo/Generation;Lme/spoo/PublicLinkFacts;Lkotlinx/serialization/json/JsonObject;)V
+	public final fun component1 ()Lme/spoo/Generation;
+	public final fun component2 ()Lme/spoo/PublicLinkFacts;
+	public final fun component3 ()Lkotlinx/serialization/json/JsonObject;
+	public final fun copy (Lme/spoo/Generation;Lme/spoo/PublicLinkFacts;Lkotlinx/serialization/json/JsonObject;)Lme/spoo/PublicStats;
+	public static synthetic fun copy$default (Lme/spoo/PublicStats;Lme/spoo/Generation;Lme/spoo/PublicLinkFacts;Lkotlinx/serialization/json/JsonObject;ILjava/lang/Object;)Lme/spoo/PublicStats;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getGeneration ()Lme/spoo/Generation;
+	public final fun getLink ()Lme/spoo/PublicLinkFacts;
+	public final fun getStats ()Lkotlinx/serialization/json/JsonObject;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/PublicStats$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/PublicStats$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/PublicStats;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/PublicStats;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PublicStats$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/PublicStatus : java/lang/Enum {
+	public static final field ACTIVE Lme/spoo/PublicStatus;
+	public static final field BLOCKED Lme/spoo/PublicStatus;
+	public static final field EXPIRED Lme/spoo/PublicStatus;
+	public static final field INACTIVE Lme/spoo/PublicStatus;
+	public static final field UNKNOWN Lme/spoo/PublicStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/PublicStatus;
+	public static fun values ()[Lme/spoo/PublicStatus;
+}
+
+public final class me/spoo/RateLimitException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/RateLimitInfo {
+	public final fun getLimit ()Ljava/lang/Long;
+	public final fun getRemaining ()Ljava/lang/Long;
+	public final fun getReset ()Lkotlin/time/Instant;
+	public final fun getRetryAfter-FghU774 ()Lkotlin/time/Duration;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/SessionExpiredException : me/spoo/SpooException {
+	public fun <init> ()V
+}
+
+public final class me/spoo/SettableStatus : java/lang/Enum {
+	public static final field ACTIVE Lme/spoo/SettableStatus;
+	public static final field Companion Lme/spoo/SettableStatus$Companion;
+	public static final field INACTIVE Lme/spoo/SettableStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/SettableStatus;
+	public static fun values ()[Lme/spoo/SettableStatus;
+}
+
+public final class me/spoo/SettableStatus$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/SortBy : java/lang/Enum {
+	public static final field CREATED_AT Lme/spoo/SortBy;
+	public static final field LAST_CLICK Lme/spoo/SortBy;
+	public static final field TOTAL_CLICKS Lme/spoo/SortBy;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/SortBy;
+	public static fun values ()[Lme/spoo/SortBy;
+}
+
+public final class me/spoo/SortOrder : java/lang/Enum {
+	public static final field ASCENDING Lme/spoo/SortOrder;
+	public static final field DESCENDING Lme/spoo/SortOrder;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/SortOrder;
+	public static fun values ()[Lme/spoo/SortOrder;
+}
+
+public abstract class me/spoo/SpooApiException : me/spoo/SpooException {
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/RateLimitInfo;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getCode ()Ljava/lang/String;
+	public final fun getField ()Ljava/lang/String;
+	public final fun getRateLimit ()Lme/spoo/RateLimitInfo;
+	public final fun getRawBody ()Ljava/lang/String;
+	public final fun getRequestId ()Ljava/lang/String;
+	public final fun getStatus ()I
+}
+
+public final class me/spoo/SpooClient : java/lang/AutoCloseable {
+	public fun <init> (Ljava/lang/String;Lme/spoo/oauth/Session;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Lme/spoo/oauth/Session;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Lme/spoo/SpooConfig;)V
+	public fun close ()V
+	public final fun getAuth ()Lme/spoo/Auth;
+	public final fun getEmoji ()Lme/spoo/Emoji;
+	public final fun getLinks ()Lme/spoo/Links;
+	public final fun getOauth ()Lme/spoo/oauth/OAuth;
+	public final fun getPublicLinks ()Lme/spoo/PublicLinks;
+	public final fun getStats ()Lme/spoo/Stats;
+	public final fun getTransport ()Lme/spoo/internal/Transport;
+}
+
+public final class me/spoo/SpooConfig {
+	public synthetic fun <init> (Ljava/lang/String;Lme/spoo/oauth/Session;Ljava/lang/String;Lio/ktor/client/engine/HttpClientEngine;IJLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lme/spoo/oauth/Session;Ljava/lang/String;Lio/ktor/client/engine/HttpClientEngine;IJLjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getApiKey ()Ljava/lang/String;
+	public final fun getBaseUrl ()Ljava/lang/String;
+	public final fun getClientTag ()Ljava/lang/String;
+	public final fun getEngine ()Lio/ktor/client/engine/HttpClientEngine;
+	public final fun getMaxRetries ()I
+	public final fun getSession ()Lme/spoo/oauth/Session;
+	public final fun getTimeout-UwyO8pc ()J
+}
+
+public final class me/spoo/SpooConfigException : me/spoo/SpooException {
+	public fun <init> (Ljava/lang/String;)V
+}
+
+public final class me/spoo/SpooConfigKt {
+	public static final field DEFAULT_BASE_URL Ljava/lang/String;
+}
+
+public final class me/spoo/SpooDecodeException : me/spoo/SpooException {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public abstract class me/spoo/SpooException : java/lang/RuntimeException {
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class me/spoo/SpooExport {
+	public final fun bodyChannel (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun bytes (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getContentType ()Ljava/lang/String;
+	public final fun getFilename ()Ljava/lang/String;
+}
+
+public final class me/spoo/SpooIOException : me/spoo/SpooException {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class me/spoo/Stats {
+	public final fun account (Lme/spoo/AccountStatsRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun account$default (Lme/spoo/Stats;Lme/spoo/AccountStatsRequest;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun export (Lme/spoo/ExportFormat;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun export$default (Lme/spoo/Stats;Lme/spoo/ExportFormat;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun exportLink (Ljava/lang/String;Lme/spoo/ExportFormat;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun exportLink$default (Lme/spoo/Stats;Ljava/lang/String;Lme/spoo/ExportFormat;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun forLink (Ljava/lang/String;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun forLink$default (Lme/spoo/Stats;Ljava/lang/String;Lme/spoo/StatsQuery;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+}
+
+public final class me/spoo/StatsQuery {
+	public fun <init> ()V
+	public fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;)V
+	public synthetic fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lkotlin/time/Instant;
+	public final fun component2 ()Lkotlin/time/Instant;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/util/Map;
+	public final fun copy (Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;)Lme/spoo/StatsQuery;
+	public static synthetic fun copy$default (Lme/spoo/StatsQuery;Lkotlin/time/Instant;Lkotlin/time/Instant;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lme/spoo/StatsQuery;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEndDate ()Lkotlin/time/Instant;
+	public final fun getFilters ()Ljava/util/Map;
+	public final fun getGroupBy ()Ljava/util/List;
+	public final fun getMetrics ()Ljava/util/List;
+	public final fun getStartDate ()Lkotlin/time/Instant;
+	public final fun getTimezone ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/StatsReport {
+	public static final field Companion Lme/spoo/StatsReport$Companion;
+	public fun <init> (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;)V
+	public synthetic fun <init> (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lme/spoo/StatsScope;
+	public final fun component10 ()Lme/spoo/TimeBucketInfo;
+	public final fun component11 ()Lme/spoo/ComputedMetrics;
+	public final fun component2 ()Ljava/util/Map;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Lme/spoo/TimeRange;
+	public final fun component6 ()Lme/spoo/StatsSummary;
+	public final fun component7 ()Ljava/util/Map;
+	public final fun component8 ()Lkotlin/time/Instant;
+	public final fun component9 ()Ljava/lang/String;
+	public final fun copy (Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;)Lme/spoo/StatsReport;
+	public static synthetic fun copy$default (Lme/spoo/StatsReport;Lme/spoo/StatsScope;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Lme/spoo/TimeRange;Lme/spoo/StatsSummary;Ljava/util/Map;Lkotlin/time/Instant;Ljava/lang/String;Lme/spoo/TimeBucketInfo;Lme/spoo/ComputedMetrics;ILjava/lang/Object;)Lme/spoo/StatsReport;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getComputedMetrics ()Lme/spoo/ComputedMetrics;
+	public final fun getFilters ()Ljava/util/Map;
+	public final fun getGeneratedAt ()Lkotlin/time/Instant;
+	public final fun getGroupBy ()Ljava/util/List;
+	public final fun getMetrics ()Ljava/util/Map;
+	public final fun getScope ()Lme/spoo/StatsScope;
+	public final fun getShortCode ()Ljava/lang/String;
+	public final fun getSummary ()Lme/spoo/StatsSummary;
+	public final fun getTimeBucketInfo ()Lme/spoo/TimeBucketInfo;
+	public final fun getTimeRange ()Lme/spoo/TimeRange;
+	public final fun getTimezone ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/StatsReport$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/StatsReport$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/StatsReport;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/StatsReport;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/StatsReport$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/StatsScope : java/lang/Enum {
+	public static final field ALL Lme/spoo/StatsScope;
+	public static final field ANON Lme/spoo/StatsScope;
+	public static final field UNKNOWN Lme/spoo/StatsScope;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lme/spoo/StatsScope;
+	public static fun values ()[Lme/spoo/StatsScope;
+}
+
+public final class me/spoo/StatsSummary {
+	public static final field Companion Lme/spoo/StatsSummary$Companion;
+	public fun <init> (JJLkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Double;)V
+	public synthetic fun <init> (JJLkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Double;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()J
+	public final fun component2 ()J
+	public final fun component3 ()Lkotlin/time/Instant;
+	public final fun component4 ()Lkotlin/time/Instant;
+	public final fun component5 ()Ljava/lang/Double;
+	public final fun copy (JJLkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Double;)Lme/spoo/StatsSummary;
+	public static synthetic fun copy$default (Lme/spoo/StatsSummary;JJLkotlin/time/Instant;Lkotlin/time/Instant;Ljava/lang/Double;ILjava/lang/Object;)Lme/spoo/StatsSummary;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAvgRedirectionTime ()Ljava/lang/Double;
+	public final fun getFirstClick ()Lkotlin/time/Instant;
+	public final fun getLastClick ()Lkotlin/time/Instant;
+	public final fun getTotalClicks ()J
+	public final fun getUniqueClicks ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/StatsSummary$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/StatsSummary$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/StatsSummary;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/StatsSummary;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/StatsSummary$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/TimeBucketInfo {
+	public static final field Companion Lme/spoo/TimeBucketInfo$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/Long;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)Lme/spoo/TimeBucketInfo;
+	public static synthetic fun copy$default (Lme/spoo/TimeBucketInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ILjava/lang/Object;)Lme/spoo/TimeBucketInfo;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDisplayFormat ()Ljava/lang/String;
+	public final fun getIntervalMinutes ()Ljava/lang/Long;
+	public final fun getMongoFormat ()Ljava/lang/String;
+	public final fun getStrategy ()Ljava/lang/String;
+	public final fun getTimezone ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/TimeBucketInfo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/TimeBucketInfo$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/TimeBucketInfo;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/TimeBucketInfo;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/TimeBucketInfo$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/TimeRange {
+	public static final field Companion Lme/spoo/TimeRange$Companion;
+	public fun <init> ()V
+	public fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;)V
+	public synthetic fun <init> (Lkotlin/time/Instant;Lkotlin/time/Instant;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lkotlin/time/Instant;
+	public final fun component2 ()Lkotlin/time/Instant;
+	public final fun copy (Lkotlin/time/Instant;Lkotlin/time/Instant;)Lme/spoo/TimeRange;
+	public static synthetic fun copy$default (Lme/spoo/TimeRange;Lkotlin/time/Instant;Lkotlin/time/Instant;ILjava/lang/Object;)Lme/spoo/TimeRange;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEndDate ()Lkotlin/time/Instant;
+	public final fun getStartDate ()Lkotlin/time/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/TimeRange$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/TimeRange$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/TimeRange;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/TimeRange;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/TimeRange$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/UnknownApiException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/UpdateLinkBuilder {
+	public final fun alias (Ljava/lang/String;)Lme/spoo/UpdateLinkBuilder;
+	public final fun blockBots (Z)Lme/spoo/UpdateLinkBuilder;
+	public final fun clearGeoRules ()Lme/spoo/UpdateLinkBuilder;
+	public final fun domain (Ljava/lang/String;)Lme/spoo/UpdateLinkBuilder;
+	public final fun expireAfter (Lkotlin/time/Instant;)Lme/spoo/UpdateLinkBuilder;
+	public final fun geoRules (Ljava/util/Map;)Lme/spoo/UpdateLinkBuilder;
+	public final fun longUrl (Ljava/lang/String;)Lme/spoo/UpdateLinkBuilder;
+	public final fun maxClicks (J)Lme/spoo/UpdateLinkBuilder;
+	public final fun metaTags (Lme/spoo/MetaTags;)Lme/spoo/UpdateLinkBuilder;
+	public final fun password (Ljava/lang/String;)Lme/spoo/UpdateLinkBuilder;
+	public final fun privateStats (Z)Lme/spoo/UpdateLinkBuilder;
+	public final fun removeExpiry ()Lme/spoo/UpdateLinkBuilder;
+	public final fun removeMaxClicks ()Lme/spoo/UpdateLinkBuilder;
+	public final fun removeMetaTags ()Lme/spoo/UpdateLinkBuilder;
+	public final fun removePassword ()Lme/spoo/UpdateLinkBuilder;
+	public final fun status (Lme/spoo/SettableStatus;)Lme/spoo/UpdateLinkBuilder;
+	public final fun systemDomain ()Lme/spoo/UpdateLinkBuilder;
+}
+
+public final class me/spoo/UpdatedLink {
+	public static final field Companion Lme/spoo/UpdatedLink$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lkotlin/time/Instant;Lme/spoo/MetaTagsInfo;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lkotlin/time/Instant;Lme/spoo/MetaTagsInfo;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Ljava/lang/String;
+	public final fun component11 ()Ljava/util/Map;
+	public final fun component12 ()Lkotlin/time/Instant;
+	public final fun component13 ()Lme/spoo/MetaTagsInfo;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lme/spoo/LinkStatus;
+	public final fun component5 ()Z
+	public final fun component6 ()Ljava/lang/Long;
+	public final fun component7 ()Lkotlin/time/Instant;
+	public final fun component8 ()Ljava/lang/Boolean;
+	public final fun component9 ()Ljava/lang/Boolean;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lkotlin/time/Instant;Lme/spoo/MetaTagsInfo;)Lme/spoo/UpdatedLink;
+	public static synthetic fun copy$default (Lme/spoo/UpdatedLink;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lme/spoo/LinkStatus;ZLjava/lang/Long;Lkotlin/time/Instant;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/util/Map;Lkotlin/time/Instant;Lme/spoo/MetaTagsInfo;ILjava/lang/Object;)Lme/spoo/UpdatedLink;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlias ()Ljava/lang/String;
+	public final fun getBlockBots ()Ljava/lang/Boolean;
+	public final fun getDomain ()Ljava/lang/String;
+	public final fun getExpireAfter ()Lkotlin/time/Instant;
+	public final fun getGeoRules ()Ljava/util/Map;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLongUrl ()Ljava/lang/String;
+	public final fun getMaxClicks ()Ljava/lang/Long;
+	public final fun getMetaTags ()Lme/spoo/MetaTagsInfo;
+	public final fun getPasswordSet ()Z
+	public final fun getPrivateStats ()Ljava/lang/Boolean;
+	public final fun getStatus ()Lme/spoo/LinkStatus;
+	public final fun getUpdatedAt ()Lkotlin/time/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/UpdatedLink$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/UpdatedLink$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/UpdatedLink;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/UpdatedLink;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/UpdatedLink$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/User {
+	public static final field Companion Lme/spoo/User$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/List;Lme/spoo/ProfilePicture;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/List;Lme/spoo/ProfilePicture;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Z
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Z
+	public final fun component7 ()Ljava/util/List;
+	public final fun component8 ()Lme/spoo/ProfilePicture;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/List;Lme/spoo/ProfilePicture;)Lme/spoo/User;
+	public static synthetic fun copy$default (Lme/spoo/User;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/List;Lme/spoo/ProfilePicture;ILjava/lang/Object;)Lme/spoo/User;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAuthProviders ()Ljava/util/List;
+	public final fun getEmail ()Ljava/lang/String;
+	public final fun getEmailVerified ()Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getPasswordSet ()Z
+	public final fun getPfp ()Lme/spoo/ProfilePicture;
+	public final fun getPlan ()Ljava/lang/String;
+	public final fun getUserName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/User$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/User$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/User;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/User;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/User$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/ValidationException : me/spoo/SpooApiException {
+}
+
+public final class me/spoo/internal/Transport : java/lang/AutoCloseable {
+	public fun <init> (Lme/spoo/SpooConfig;Lio/ktor/client/engine/HttpClientEngine;)V
+	public fun close ()V
+	public final fun send (Lio/ktor/http/HttpMethod;Ljava/lang/String;Ljava/util/List;Lkotlinx/serialization/json/JsonElement;Ljava/util/List;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun send$default (Lme/spoo/internal/Transport;Lio/ktor/http/HttpMethod;Ljava/lang/String;Ljava/util/List;Lkotlinx/serialization/json/JsonElement;Ljava/util/List;ZLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+}
+
+public final class me/spoo/internal/TransportKt {
+	public static final fun getWireJson ()Lkotlinx/serialization/json/Json;
+}
+
+public final class me/spoo/oauth/DeviceTokens {
+	public static final field Companion Lme/spoo/oauth/DeviceTokens$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lme/spoo/User;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Lme/spoo/User;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Lme/spoo/User;)Lme/spoo/oauth/DeviceTokens;
+	public static synthetic fun copy$default (Lme/spoo/oauth/DeviceTokens;Ljava/lang/String;Ljava/lang/String;Lme/spoo/User;ILjava/lang/Object;)Lme/spoo/oauth/DeviceTokens;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAccessToken ()Ljava/lang/String;
+	public final fun getRefreshToken ()Ljava/lang/String;
+	public final fun getUser ()Lme/spoo/User;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public final fun tokens ()Lme/spoo/oauth/TokenPair;
+}
+
+public final synthetic class me/spoo/oauth/DeviceTokens$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/oauth/DeviceTokens$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/oauth/DeviceTokens;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/oauth/DeviceTokens;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/oauth/DeviceTokens$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/oauth/OAuth {
+	public final fun authorizationUrl (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	public static synthetic fun authorizationUrl$default (Lme/spoo/oauth/OAuth;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+	public final fun exchangeCode (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun refreshTokens (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class me/spoo/oauth/OAuthKt {
+	public static final fun generatePkcePair ()Lme/spoo/oauth/PkcePair;
+	public static final fun generateState ()Ljava/lang/String;
+}
+
+public final class me/spoo/oauth/PkcePair {
+	public final fun getChallenge ()Ljava/lang/String;
+	public final fun getVerifier ()Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class me/spoo/oauth/Session {
+	public synthetic fun <init> (Lme/spoo/oauth/TokenPair;JLkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Lme/spoo/oauth/TokenPair;JLkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun invalidate (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class me/spoo/oauth/TokenPair {
+	public static final field Companion Lme/spoo/oauth/TokenPair$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lme/spoo/oauth/TokenPair;
+	public static synthetic fun copy$default (Lme/spoo/oauth/TokenPair;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lme/spoo/oauth/TokenPair;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAccessToken ()Ljava/lang/String;
+	public final fun getRefreshToken ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class me/spoo/oauth/TokenPair$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lme/spoo/oauth/TokenPair$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lme/spoo/oauth/TokenPair;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lme/spoo/oauth/TokenPair;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class me/spoo/oauth/TokenPair$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
