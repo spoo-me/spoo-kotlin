@@ -32,8 +32,12 @@ jobs:
       - name: Start the backend stack
         working-directory: backend
         run: |
-          docker compose up -d --wait || docker compose up -d
-          for i in $(seq 1 60); do
+          # The compose file requires a .env; the example plus a generated
+          # secret is enough since compose pins the db/redis URIs itself.
+          cp .env.example .env
+          python3 -c "import os; print('SECRET_KEY=\"' + os.urandom(32).hex() + '\"')" >> .env
+          docker compose up -d --build
+          for i in $(seq 1 90); do
             if curl -fsS http://127.0.0.1:8000/health >/dev/null 2>&1; then
               echo "backend is up"; exit 0
             fi
